@@ -9,7 +9,7 @@ bool LoginReturn() {
     cout<<"Enter password: ";
     cin>>password;
 
-    ifstream read("C:\\login regestration cpp\\" + username +".txt");
+    ifstream read("C:\\login regestration cpp\\" + username +".txt");  //initializing location
     getline(read, usrName);
     getline(read, pwd);
 
@@ -33,7 +33,7 @@ int main()
         cin>>password;
 
         ofstream newfile;
-        newfile.open("C:\\login regestration cpp\\" + username + ".txt");
+        newfile.open("C:\\login regestration cpp\\" + username + ".txt"); //initializing location
         newfile<<username <<endl <<password;
         newfile.close();
 
